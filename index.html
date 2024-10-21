@@ -1,188 +1,285 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Soru Çözüm Sitesi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
+<!doctype html>
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            width: 80%;
-            margin-top: 20px;
-        }
-
-        .question-area {
-            width: 60%;
-            text-align: center;
-            min-width: 200px;
-        }
-
-        .question-area img {
-            width: 100%;
-            height: auto;
-        }
-
-        .optical-form {
-            width: 15%;
-            padding: 10px;
-            border: 1px solid #000;
-            min-width: 250px;
-        }
-
-        .optical-form h3 {
-            text-align: center;
-        }
-
-        .question-answer {
-            margin: 10px 0;
-        }
-
-        .navigation {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .question-answer label {
-            margin-right: 7px; /* Buradaki değeri istediğiniz kadar artırabilirsiniz */
-        }
-
-        #results {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <div class="question-area">
-            <img id="question-image" src="soru1.png" alt="Soru 1">
-        </div>
-
-        <div class="optical-form">
-            <h3>Optik Form</h3>
-            <form id="optical-form">
-                <div class="question-answer">
-                    <label>1)</label>
-                    A <input type="radio" name="q1" value="A">
-                    B <input type="radio" name="q1" value="B">
-                    C <input type="radio" name="q1" value="C">
-                    D <input type="radio" name="q1" value="D">
-                    E <input type="radio" name="q1" value="E">
+<html lang='tr'>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="author" content="Okula ve Sınavlara Hazırlık">
+        <meta name="autor" content="okul evimde">
+        <meta name="keywords" content="YKS, LGS, TEST">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>okulevimde</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/okul.css">
+    
+    </head>
+    
+    <body>
+        
+        <header> 
+            <div class="container">
+                <div class="logo">
+                    <a href="okulevimde.html"><img src="img/logo.png"></a>
                 </div>
-                <!-- Diğer sorular -->
-                <div class="question-answer">
-                    <label>2)</label>
-                    A <input type="radio" name="q2" value="A">
-                    B <input type="radio" name="q2" value="B">
-                    C <input type="radio" name="q2" value="C">
-                    D <input type="radio" name="q2" value="D">
-                    E <input type="radio" name="q2" value="E">
+            </div>
+            
+            <div class="menu">
+                    <ul>
+                        <li class="deniyorum"><a href="ilkokul.html">İLKOKUL</a>
+                            <div class="acilirmenu"> 
+                               <ul> 
+                                <li><a href='#'>1.Sınıf</a></li>
+                                <li><a href='#'>2.Sınıf</a></li>
+                                <li><a href='#'>3.Sınıf</a></li>
+                                <li><a href='#'>4.Sınıf</a></li>
+                            
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li><a href="ortaokul.html">ORTAOKUL</a>
+                            <div class="acilirmenu">
+                                <ul> 
+                                    <li><a href='#'>5.Sınıf</a></li>
+                                    <li><a href='#'>6.Sınıf</a></li>
+                                    <li><a href='#'>7.Sınıf</a></li>
+                                    <li><a href='#'>8.Sınıf</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        
+                        <li><a href="lgs.html">LGS</a> 
+                            <div class="acilirmenu">
+                                <ul> 
+                                    <li><a href='#'>mat</a></li>
+                                    <li><a href='#'>türkçe</a></li>
+                                    <li><a href='#'>fen</a></li>
+                                    <li><a href='#'>sosyal</a></li>
+                                </ul>
+                            </div>
+                                                    
+                        </li>
+
+                        <li><a href="lise.html">LİSE</a> 
+                             <div class="acilirmenu">    
+                                <ul> 
+                                    <li><a href='#'> 9.Sınıf</a></li>
+                                    <li><a href='#'> 10.Sınıf</a></li>
+                                    <li><a href='#'> 11.Sınıf</a></li>
+                                    <li><a href='#'> 12.Sınıf</a></li>
+                        
+                                </ul>
+                            </div>
+                            
+                        </li>
+                                                            
+                        <li><a href="yks.html">YKS</a>
+                        
+                            <div class="acilirmenu">
+                                <ul> 
+                                <li><a href='#'> TYT</a></li>
+                                <li><a href='#'> AYT</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                       
+                        <li class="login"><a href="#">KAYIT OL</a> </li>
+                        <li class="login"><a href="#">GİRİŞ YAP</a> </li>
+                    
+                    </ul>
                 </div>
-                <!-- Daha fazla soru eklenebilir -->
-            </form>
-        </div>
-    </div>
+            
+        
+        </header>
+        
+        
+        
+        
+<!--        MAİN SECTİON-->
+        
+        <section id="mainSlider" class="slider">
+            <div id="mainCaption" class="caption">
+                <h1>OKULA VE SINAVLARA HAZIRLANMANIN EN İYİ YOLU</h1>
+                <p>Sitemizde bulunan testleri online çözerek sınablarınıza verimli bir şekilde çalışabilirsiniz. Takıldığınız yerlerde çözümlere anında ulaşabilirsiniz.</p>                
+            </div>
+        
+        </section>
+        
+        
+        
+        
+<!--            FEATURE SECTION-->
+        <section id="features" class="sectionarea">
+            <div class="featuresTop">
+                <h2 class="sectionHeader">VERİMLİ DERS ÇALIŞMAK</h2>
+                <p>Aşağıdaki adımları izleyerek daha verimli ders çalışabilirsiniz.</p>
+            </div>
+            <div class="featuresBody">
+                <div class="container">
+                    <div class="col3">
+                        <div class="item">
+                            <div class="zoom">
+                                <img src="img/col3_1.jpg">
+                            </div>
+                            <div class="itemText">
+                                <h3>İLK ADIM</h3>
+                                <p>ders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çalışmak çok önemlidir.</p>
+                                <a href="#" class="btnDetails">DETAYLI BİLGİ</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col3">
+                        <div class="item">
+                            <div class="zoom">
+                                <img src="img/col3_2.jpg">
+                            </div>
+                            <div class="itemText">
+                                <h3>İKİNCİ ADIM</h3>
+                                <p>ders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çalışmak çok önemlidir.</p>
+                                <a href="#" class="btnDetails">DETAYLI BİLGİ</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col3">
+                        <div class="item">
+                            <div class="zoom">
+                                <img src="img/col3_3.jpg">
+                            </div>
+                            <div class="itemText">
+                                <h3>ÜÇÜNCÜ ADIM</h3>
+                                <p>ders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çok önemlidirders çalışmak çalışmak çok önemlidir.</p>
+                                <a href="#" class="btnDetails">DETAYLI BİLGİ</a>
+                            </div>
+                        </div>                    
+                    </div>                
+                </div>            
+            </div>
+        
+        </section>
+        
+<!--        PARALLAX SECTİON-->
+        
+        <section id="parallax" class="sectionArea">
+            <div class="parallaxTop">
+                <h2 class="sectionHeader"> DERS ÇALIŞMAK ZORDUR</h2>
+                <p>Aşağıdaki adımları izleyerek daha verimli ders çalışabilirsiniz.</p>
+            </div>
+        
+        </section>
+        
+<!--        ENGINE SECTION-->
+        <section id="engine" class="sectionArea">
+            <div class="engineTop">
+                <h2 class="sectionHeader">ZOR ZOR ZOR </h2>
+                <p>Aşağıdaki adımları izleyerek daha verimli ders çalışabilirsiniz.</p>
+            </div>
+            <div class="engineBody">
+                <div class="container">
+                    <div class="col2">
+                        <div class="engineContainer">
+                            <img src="img/col2_1.jpg" class="imageOver">
+                            <div class="engineOverlay">
+                                <div class="engineText">DERS ÇALIŞ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="engineContainer">
+                            <img src="img/col2_2.jpg" class="imageOver">
+                            <div class="engineOverlay2">
+                                <div class="engineText">ÇOK ÇALIŞ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+<!--        ENGINE SECTION-->
+        <footer class="sectionArea">
+            <div class="container">
+                <div class="col3">
+                    <div class="footerItem">
+                        <h3>SİTEMİZE HOŞGELDİNİZ</h3>
+                        <a href="okulevimde.html"><img src="img/logo.png"></a>
+                        <p>Başarılı olmak için aramıza katılın</p>
+                    </div>
+                </div>
 
-    <div class="navigation">
-        <button id="prev-question">Önceki Soru</button>
-        <button id="next-question">Sonraki Soru</button>
-        <button id="end-test">Testi Sonlandır</button>
-    </div>
+                <div class="col3">
+                    <div class="footerItem">
+                        <h3>HIZLI LİNK</h3>
+                        <ul class="footerLinks">
+                            <li><a href="okulevimde.html">OKUL EVİMDE</a> </li>
+                            <li><a href="ilkokul.html">İLKOKUL</a> </li>
+                            <li><a href="ortaokul.html">ORTAOKUL</a> </li>
+                            <li><a href="lgs.html">LGS</a> </li>
+                            <li><a href="lise.html">LİSE</a> </li>
+                            <li><a href="yks.html">YKS</a> </li>
+                        </ul>
 
-    <div id="results"></div>
+                    </div>
+                </div>
+                
+                <div class="col3">
+                    <div class="footerItem">
+                        <h3>BİZE KATILIN</h3>
+                        <ul class="socialLinks">
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>                  
+                </div>
+            </div>
+        </footer>    
+    </body>
+</html> 
 
-    <script>
-        const questions = [
-            { image: 'soru1.png', correctAnswer: 'C' },
-            { image: 'soru2.png', correctAnswer: 'A' }
-            // Diğer sorular eklenebilir
-        ];
 
-        let currentQuestion = 0;
-        const totalQuestions = questions.length;
-        const userAnswers = {}; // Her soruya ait en son işaretlenen cevapları tutar
 
-        document.getElementById('next-question').addEventListener('click', nextQuestion);
-        document.getElementById('prev-question').addEventListener('click', prevQuestion);
-        document.getElementById('end-test').addEventListener('click', endTest);
 
-        // Optik formdaki her bir radyo butonuna tıklandığında cevabı kaydetme
-        document.getElementById('optical-form').addEventListener('change', (event) => {
-            const questionNumber = event.target.name.slice(1); // Sorunun numarasını alır (q1 -> 1)
-            userAnswers[questionNumber] = event.target.value; // Cevabı kaydeder
-        });
 
-        function nextQuestion() {
-            if (currentQuestion < totalQuestions - 1) {
-                currentQuestion++;
-                updateQuestion();
-            }
-        }
 
-        function prevQuestion() {
-            if (currentQuestion > 0) {
-                currentQuestion--;
-                updateQuestion();
-            }
-        }
 
-        function updateQuestion() {
-            document.getElementById('question-image').src = questions[currentQuestion].image;
-            loadAnswer();
-        }
 
-        function loadAnswer() {
-            const form = document.getElementById('optical-form');
-            const savedAnswer = userAnswers[currentQuestion + 1];
-            if (savedAnswer) {
-                form.querySelector(`input[name="q${currentQuestion + 1}"][value="${savedAnswer}"]`).checked = true; // Cevap varsa yüklenir
-            } else {
-                form.querySelectorAll(`input[name="q${currentQuestion + 1}"]`).forEach(input => {
-                    input.checked = false; // Eğer bir cevap işaretlenmemişse tüm cevapları temizle
-                });
-            }
-        }
 
-        function endTest() {
-            let resultHtml = '<h3>Sonuçlar:</h3>';
 
-            questions.forEach((q, index) => {
-                const userAnswer = userAnswers[index + 1];
-                if (userAnswer) {
-                    if (userAnswer === q.correctAnswer) {
-                        resultHtml += `<p>${index + 1}) ✔️ (Doğru)</p>`;
-                    } else {
-                        resultHtml += `<p>${index + 1}) ❌ (Yanlış, Doğru Cevap: ${q.correctAnswer})</p>`;
-                    }
-                } else {
-                    resultHtml += `<p>${index + 1}) Cevaplanmadı</p>`;
-                }
-            });
 
-            document.getElementById('results').innerHTML = resultHtml;
-        }
 
-        // Sayfa yüklendiğinde ilk soruyu yükle
-        window.onload = updateQuestion;
-    </script>
 
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
