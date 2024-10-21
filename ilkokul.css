@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Raleway' ;
+    src: url ('../Fonts/Raleway-Regular') ;
+}
+
+.teste_basla {
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    margin-top: 5%;
+    background-color: #500d16 ;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 40%;
+}
+
+.teste_basla h1 a {
+     text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto ;
+    display: flex ;
+}
+header .logo img {
+    display: block;
+    height: 120px;
+}
+
+.deniyorum {
+    margin-left: 500px;
+}
+
+.logo {
+    z-index: 1;
+    margin-bottom: -40;
+}
+.menu {
+    margin-top: -50px;
+    margin-bottom: -2.6px;
+}
+
+.menu ul {
+    background: #500d16;
+    height: 50px;
+    display: inline-block;
+    width: 100%;
+   
+}
+
+.menu ul li {
+    float: left;
+    height: 50px;
+    position: relative;
+    width: 150px;
+
+}
+
+
+.menu ul li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 15px;
+    line-height: 50px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #f3f3f3;
+    color: #500d16 ;
+}
+
+
+.acilirmenu ul {
+    display: none;
+    background-color: #500d16;
+/*    position: absolute;*/
+    left: 0;
+    top: 40px;
+    transition: 250ms;
+   
+}
+
+
+.acilirmenu ul li {
+    background-color: #500d16;       
+}
+
+.menu ul li:hover .acilirmenu ul {
+    display: block;
+/*    margin-top: 10px;*/
+}
